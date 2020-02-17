@@ -1,11 +1,42 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Lato Light"), local("Lato-Light"), url(assets/Lato-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"), url(assets/Lato-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Lato Bold"), local("Lato-Bold"), url(assets/Lato-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Lato Black"), local("Lato-Black"), url(assets/Lato-Black.woff2) format("woff2");
+}
+
 html {
     box-sizing: border-box;
     max-width: 1020px;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
 }
 
-*,
+ *,
 *::before,
 *::after {
     box-sizing: inherit;
@@ -15,6 +46,7 @@ a {
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
+    font-family: 'Lato Light';
 }
 
 h1 {
@@ -28,7 +60,6 @@ h4 {
     padding-bottom: 15px;
     font-size: 19px;
     color: #666d89;
-    font-family: "Lato - Black";
     font-weight: 900;
     cursor: pointer;
 }
@@ -100,24 +131,25 @@ li {
 
 .slider__arrow {
     opacity: 0.3;
+    cursor: pointer;
 }
 
 .slider__arrow:hover {
     opacity: 0.8;
 }
 
-.slider__iphoneVert,
-.slider__iphoneHori {
+.slider__pictureLeft,
+.slider__pictureRight {
     position: relative;
 }
 
-.slider__iphoneVert img:last-child {
+.slider__pictureLeft img:last-child {
     position: absolute;
     top: 65px;
     left: 15px;
 }
 
-.slider__iphoneHori img:last-child {
+.slider__pictureRight img:last-child {
     position: absolute;
     top: 15px;
     left: 60px;
@@ -146,7 +178,7 @@ li {
     height: 100px;
 }
 
-.benefits {
+.services__benefits {
     display: grid;
     flex-basis: 65%;
     grid-template-rows: 86px 86px;
@@ -155,11 +187,11 @@ li {
     row-gap: 40px;
 }
 
-.benefits p {
+.services__benefits p {
     font-size: 12px;
     line-height: 1.8;
 }
 
-.benefits img {
+.services__benefits img {
     cursor: pointer;
 }
