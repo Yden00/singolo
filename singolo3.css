@@ -48,33 +48,33 @@ form {
     padding: 63px 8px 65px 40px;
 }
 form h2{
-    color: #F0D8D9;
-    padding-bottom: 23px;
-    font-family: "Lato Black", "Arial",sans-serif;
-    font-weight: 900;
+    color: #F0CCCC;
+    padding: 6px 0px 27px ;
+    font-family: "Lato Black", "Arial", sans-serif;
+    font-weight: 700;
     font-size: 30px;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.7px;
+    line-height: 18px;
 }
 
 form p{
     color: #F0CCCC;
     line-height: 1.7;
     font-family: "Lato Light", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: -0.2px;
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: -0.1px;
     line-height: 30px;
     text-align: justify;
-    padding-bottom: 42px;
+    padding-bottom: 45px;
 }
 
-footer {
-    background-color: #2D303A;
-    height: 77px;
+.inputs-contacts{
+    display: flex;
 }
 
 .inputs{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     padding-right: 21px;
     width: 66%;
@@ -100,20 +100,59 @@ footer {
 .contact-information{
     width: 300px;
     text-align: justify;
+    color: #F0D8D9;
+}
+
+textarea{
+    height: 200px;
 }
 
 .contact-information h3{
   font-family: "Lato Black", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 900;
+  font-size: 15px;
+  font-weight: 800;
   line-height: 18px;
+  margin: 0;
 }
 
 .contact-information p {
     font-family: "Lato Regular", "Arial", sans-serif;
-    font-size: 12px;
+    margin: 10px 0 0 0;
+    font-size: 11px;
     font-weight: 400;
-    letter-spacing: -0.1px;
     line-height: 22px;
     text-align: justify;
-  }
+    padding-bottom: 23px;
+    letter-spacing: 0.3px;
+}
+
+.contact-information a {
+    display: block ;
+    text-decoration: none;
+    font-size: 12px;
+    color: #F0D8D9;
+    padding-bottom: 10px;
+}
+
+.contact-information a img{
+    padding-right: 10px;
+}
+
+.footer {
+    background-color: #2d303a;
+    color: #5e657e;
+    display: flex;
+    padding: 34px 41px 34px 42px;
+    justify-content: space-between;
+    height: 77px;
+    align-items: center;
+}
+
+.copyright{
+    font-size: 12px;
+}
+
+.footer__links img{
+    opacity: 0.7;
+    padding-right: 2px;
+}
