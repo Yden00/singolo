@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url('./assets/lato-v16-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url('./assets/lato-v16-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url('./assets/lato-v16-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url('./assets/lato-v16-latin-900.woff2') format('woff2');
+}
+
+  html, body {
+    height: 100%;
+    box-sizing: border-box;
+    max-width: 1020px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+   
+}
+
+ *,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+form {
+    background-color: #F06C64;
+    height: 655px;
+    border-bottom: 7px #EA676B solid ;
+    padding: 63px 8px 65px 40px;
+}
+form h2{
+    color: #F0D8D9;
+    padding-bottom: 23px;
+    font-family: "Lato Black", "Arial",sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -0.2px;
+}
+
+form p{
+    color: #F0CCCC;
+    line-height: 1.7;
+    font-family: "Lato Light", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    line-height: 30px;
+    text-align: justify;
+    padding-bottom: 42px;
+}
+
+footer {
+    background-color: #2D303A;
+    height: 77px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding-right: 21px;
+    width: 66%;
+}
+
+.input {
+    background-color: #d6564f;
+    border-radius: 5px;
+    font-family: "Lato Regular", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #f0d8d9;
+    padding: 7px 14px 9px 14px;
+    margin-bottom: 16px;
+    border: none;
+
+}
+.input::placeholder {
+    color: #f48c8f;
+  }
+
+.contact-information{
+    width: 300px;
+    text-align: justify;
+}
+
+.contact-information h3{
+  font-family: "Lato Black", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+}
+
+.contact-information p {
+    font-family: "Lato Regular", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    line-height: 22px;
+    text-align: justify;
+  }
