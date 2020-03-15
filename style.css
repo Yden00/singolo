@@ -35,6 +35,7 @@ html {
     max-width: 1020px;
     margin: 0 auto;
     font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -80,10 +81,18 @@ li {
     padding: 32px 32px 32px 38px;
     margin: 0 auto;
     border-bottom: #323746 solid 7px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
-.header a:hover {
-    color: #c7c7c7;
+
+.header a:focus:hover {
+    color: #de655e;
+}
+
+.active {
+    color: #de655e;
 }
 
 .header__logo {
@@ -102,10 +111,6 @@ li {
 .header__nav {
     padding: 9px 8px 0 0;
     flex-basis: 40%;
-}
-
-.header__nav ul li:first-child a {
-    color: #de655e;
 }
 
 .header__nav ul li:first-child {
@@ -241,17 +246,30 @@ content li {
     vertical-align: middle;
 }
 
-content li:first-child {
-    color: #ffffff;
-    border: 1px #ffffff solid;
+#portfolio__buttons li {
+    color: #767E9E;
+    border: 1px solid #767E9E;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.content__grid-container {
+#portfolio__buttons li:hover {
+    cursor: pointer;
+    border: 1px solid #BBBBBB;
+    color: #DEDEDE;
+}
+
+#content__grid-container {
     display: grid;
     grid-template-columns: 220px 220px 220px 220px;
     grid-template-rows: 187px 187px 187px;
     gap: 20px;
 
+}
+
+.container {
+    cursor: pointer;
+    border: 5px solid #F06C64;
 }
 
 .contacts {
@@ -317,12 +335,13 @@ content li:first-child {
 form {
     background-color: #F06C64;
     height: 655px;
-    border-bottom: 7px #EA676B solid ;
+    border-bottom: 7px #EA676B solid;
     padding: 63px 8px 65px 40px;
 }
-form h2{
+
+form h2 {
     color: #F0CCCC;
-    padding: 6px 0px 27px ;
+    padding: 6px 0px 27px;
     font-family: "Lato Black", "Arial", sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -330,7 +349,7 @@ form h2{
     line-height: 18px;
 }
 
-form p{
+form p {
     color: #F0CCCC;
     line-height: 1.7;
     font-family: "Lato Light", "Arial", sans-serif;
@@ -342,11 +361,11 @@ form p{
     padding-bottom: 45px;
 }
 
-.inputs-contacts{
+.inputs-contacts {
     display: flex;
 }
 
-.inputs{
+.inputs {
     display: inline-flex;
     flex-direction: column;
     padding-right: 21px;
@@ -366,26 +385,27 @@ form p{
     border: none;
 
 }
+
 .input::placeholder {
     color: #f48c8f;
-  }
+}
 
-.contact-information{
+.contact-information {
     width: 300px;
     text-align: justify;
     color: #F0D8D9;
 }
 
-textarea{
+textarea {
     height: 200px;
 }
 
-.contact-information h3{
-  font-family: "Lato Black", "Arial", sans-serif;
-  font-size: 15px;
-  font-weight: 800;
-  line-height: 18px;
-  margin: 0;
+.contact-information h3 {
+    font-family: "Lato Black", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 18px;
+    margin: 0;
 }
 
 .contact-information p {
@@ -400,27 +420,27 @@ textarea{
 }
 
 .contact-information a {
-    display: block ;
+    display: block;
     text-decoration: none;
     font-size: 12px;
     color: #F0D8D9;
     padding-bottom: 10px;
 }
 
-.contact-information a img{
+.contact-information a img {
     padding-right: 10px;
 }
 
-.contact-information button{
+.contact-information button {
     margin-top: 125px;
     padding: 5px 70px 5px 70px;
     font-size: 15px;
     border-radius: 50px;
-    border: 1px #F0D8D9 solid ;
+    border: 1px #F0D8D9 solid;
 }
 
-button, 
-button:active, 
+button,
+button:active,
 button:focus {
     outline: none;
     cursor: pointer;
@@ -436,11 +456,11 @@ button:focus {
     align-items: center;
 }
 
-.copyright{
+.copyright {
     font-size: 12px;
 }
 
-.footer__links img{
+.footer__links img {
     opacity: 0.7;
     padding-right: 2px;
     cursor: pointer;

@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__wrapper">
             <div class="header__logo">
                 <a href="#">SINGOLO<span>*</span></a>
             </div>
             <nav class="header__nav">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                <ul id="nav-anchors">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#OurServices">SERVICES</a></li>
+                    <li><a href="#Portfolio">PORTFOLIO</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,17 +30,20 @@
         <div class="slider">
             <img class="slider__arrow" src="./assets/chevleft.svg" alt="Slide Left">
             <div class="slider__pictureLeft">
-                <img src="./assets/iPhone_Vertical.svg" alt="IPhone">
-                <img src="./assets/Layerhorizontal.svg" alt="IPhone Screen">
+                <img class="phone" src="./assets/iPhone_Vertical.svg" alt="IPhone">
+                <img class="phoneDisplay" src="./assets/Layerhorizontal.svg" alt="IPhone Screen">
             </div>
             <div class="slider__pictureRight">
-                <img src="./assets/iPhone_Horizontal.svg" alt="IPhone">
-                <img src="./assets/Layervertical.svg" alt="IPhone Screen">
+                <img class="phone" src="./assets/iPhone_Horizontal.svg" alt="IPhone">
+                <img class="phoneDisplay" src="./assets/Layervertical.svg" alt="IPhone Screen">
+            </div>
+            <div class="slider__hidden">
+                <img src="" alt="">
             </div>
             <img class="slider__arrow" src="./assets/chevright.svg" alt="Slide Right">
         </div>
 
-        <div class="services">
+        <div id="OurServices" class="services">
             <div class="services__info">
                 <h1>Our Services</h1>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
@@ -89,16 +92,16 @@
             </div>
         </div>
     </main>
-    <content>
+    <content id="Portfolio">
         <h2>Portfolio</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <ul>
+        <ul id="portfolio__buttons">
             <li>All</li>
             <li>Web Design</li>
             <li>Graphic Design</li>
             <li>Artwork</li>
         </ul>
-        <div class="content__grid-container">
+        <div id="content__grid-container">
             <div><img src="./assets/ship.svg" alt="ship"></div>
             <div><img src="./assets/girl.svg" alt="girl"></div>
             <div><img src="./assets/town.svg" alt="town"></div>
@@ -113,7 +116,7 @@
             <div><img src="./assets/wall.svg" alt="wall"></div>
         </div>
     </content>
-    <div class="contacts">
+    <div id="About" class="contacts">
         <h2>About Us</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
             erat porttitor<br>
@@ -162,7 +165,7 @@
             </div>
         </div>
     </div>
-    <form action="">
+    <form id="Contact" action="">
         <h2>Get a Quote</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
             erat porttitor<br>
@@ -183,15 +186,15 @@
                     aliquet turpis, et consequat felis.
                 </p>
                 <a href="https://www.google.com/maps/search/+Elm+St.+14%2F05+Lost+City/@53.718879,27.986709,7z">
-                    <img src="./assets/location.png" alt="">
+                    <img src="./assets/location.png" alt="location">
                     <span>Elm St. 14/05 Lost City</span>
                 </a>
                 <a href="tel:035283318635">
-                    <img src="./assets/phone.png" alt="">
+                    <img src="./assets/phone.png" alt="tel">
                     03528 331 86 35
                 </a>
                 <a href="mailto:info@singolo.com">
-                    <img src="./assets/email.png" alt="">
+                    <img src="./assets/email.png" alt="mail">
                     info@singolo.com
                 </a>
                 <button>Submit</button>
@@ -211,6 +214,7 @@
             <img src="./assets/LinkedIn.svg" alt="LinkedIn">
         </div>
     </footer>
+    <script src="./src/app.js"></script>
 </body>
 
 </html>
