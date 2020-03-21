@@ -132,12 +132,39 @@ li {
     height: 600px;
     align-items: center;
     border-bottom: #ea676b solid 7px;
-    padding: 0 45px;
+}
+
+.slide-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F06C64;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    border-bottom: #ea676b solid 7px;
+    transition: left 500ms linear;
+}
+
+.slide-2 {
+    position: absolute;
+    width: 1020px;
+    height: 600px;
+    background-image: url("./assets/Slide-2.png");
+    transition: left 500ms linear;
+    opacity: 1;
+}
+
+.hidden-slide {
+    display: none;
 }
 
 .slider__arrow {
+    position: relative;
+    z-index: 1;
     opacity: 0.3;
+    transition: 0.6s ease;
     cursor: pointer;
+    padding: 41px;
 }
 
 .slider__arrow:hover {
@@ -160,7 +187,6 @@ li {
     top: 15px;
     left: 60px;
 }
-
 
 /* Services Styles */
 
@@ -246,17 +272,17 @@ content li {
     vertical-align: middle;
 }
 
-#portfolio__buttons li {
+.portfolio__buttons>li {
     color: #767E9E;
+    cursor: pointer;
     border: 1px solid #767E9E;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
-#portfolio__buttons li:hover {
-    cursor: pointer;
+ul .switchTabs {
     border: 1px solid #BBBBBB;
-    color: #DEDEDE;
+    color: rgb(255, 255, 255);
 }
 
 #content__grid-container {
@@ -264,7 +290,6 @@ content li {
     grid-template-columns: 220px 220px 220px 220px;
     grid-template-rows: 187px 187px 187px;
     gap: 20px;
-
 }
 
 .container {

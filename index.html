@@ -17,30 +17,31 @@
             </div>
             <nav class="header__nav">
                 <ul id="nav-anchors">
-                    <li><a href="#header">HOME</a></li>
-                    <li><a href="#OurServices">SERVICES</a></li>
-                    <li><a href="#Portfolio">PORTFOLIO</a></li>
-                    <li><a href="#About">ABOUT</a></li>
-                    <li><a href="#Contact">CONTACT</a></li>
+                    <li><a class="nav-element" href="#header">HOME</a></li>
+                    <li><a class="nav-element" href="#OurServices">SERVICES</a></li>
+                    <li><a class="nav-element" href="#Portfolio">PORTFOLIO</a></li>
+                    <li><a class="nav-element" href="#About">ABOUT</a></li>
+                    <li><a class="nav-element" href="#Contact">CONTACT</a></li>
                 </ul>
             </nav>
-        </div>
+            </a>
     </header>
     <main>
         <div class="slider">
-            <img class="slider__arrow" src="./assets/chevleft.svg" alt="Slide Left">
-            <div class="slider__pictureLeft">
-                <img class="phone" src="./assets/iPhone_Vertical.svg" alt="IPhone">
-                <img class="phoneDisplay" src="./assets/Layerhorizontal.svg" alt="IPhone Screen">
+            <img class="slider__arrow" id="arrowLeft" src="./assets/chevleft.svg" alt="Slide Left">
+            <div class="slide-1">
+                <div class="slider__pictureLeft">
+                    <img class="phone" src="./assets/iPhone_Vertical.svg" alt="IPhone">
+                    <img class="phoneDisplay" src="./assets/Layerhorizontal.svg" alt="IPhone Screen">
+                </div>
+                <div class="slider__pictureRight">
+                    <img class="phone" src="./assets/iPhone_Horizontal.svg" alt="IPhone">
+                    <img class="phoneDisplay" src="./assets/Layervertical.svg" alt="IPhone Screen">
+                </div>
             </div>
-            <div class="slider__pictureRight">
-                <img class="phone" src="./assets/iPhone_Horizontal.svg" alt="IPhone">
-                <img class="phoneDisplay" src="./assets/Layervertical.svg" alt="IPhone Screen">
+            <div class="slide-2">
             </div>
-            <div class="slider__hidden">
-                <img src="" alt="">
-            </div>
-            <img class="slider__arrow" src="./assets/chevright.svg" alt="Slide Right">
+            <img class="slider__arrow" id="arrowRight" src="./assets/chevright.svg" alt="Slide Right">
         </div>
 
         <div id="OurServices" class="services">
@@ -95,25 +96,25 @@
     <content id="Portfolio">
         <h2>Portfolio</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <ul id="portfolio__buttons">
-            <li>All</li>
-            <li>Web Design</li>
-            <li>Graphic Design</li>
-            <li>Artwork</li>
+        <ul class="portfolio__buttons">
+            <li class="button">All</li>
+            <li class="button">Web Design</li>
+            <li class="button">Graphic Design</li>
+            <li class="button">Artwork</li>
         </ul>
         <div id="content__grid-container">
-            <div><img src="./assets/ship.svg" alt="ship"></div>
-            <div><img src="./assets/girl.svg" alt="girl"></div>
-            <div><img src="./assets/town.svg" alt="town"></div>
-            <div><img src="./assets/Robot.svg" alt="robot"></div>
-            <div><img src="./assets/animals.svg" alt="animals"></div>
-            <div><img src="./assets/SDK.svg" alt="sdk"></div>
-            <div><img src="./assets/tracery.svg" alt="tracery"></div>
-            <div><img src="./assets/birds.svg" alt="birds"></div>
-            <div><img src="./assets/dragon.svg" alt="dragon"></div>
-            <div><img src="./assets/BeautifulFont.svg" alt="BeautifulFont"></div>
-            <div><img src="./assets/monster.svg" alt="monster"></div>
-            <div><img src="./assets/wall.svg" alt="wall"></div>
+            <div><img class="pictures" src="./assets/ship.svg" alt="ship"></div>
+            <div><img class="pictures" src="./assets/girl.svg" alt="girl"></div>
+            <div><img class="pictures" src="./assets/town.svg" alt="town"></div>
+            <div><img class="pictures" src="./assets/Robot.svg" alt="robot"></div>
+            <div><img class="pictures" src="./assets/animals.svg" alt="animals"></div>
+            <div><img class="pictures" src="./assets/SDK.svg" alt="sdk"></div>
+            <div><img class="pictures" src="./assets/tracery.svg" alt="tracery"></div>
+            <div><img class="pictures" src="./assets/birds.svg" alt="birds"></div>
+            <div><img class="pictures" src="./assets/dragon.svg" alt="dragon"></div>
+            <div><img class="pictures" src="./assets/BeautifulFont.svg" alt="BeautifulFont"></div>
+            <div><img class="pictures" src="./assets/monster.svg" alt="monster"></div>
+            <div><img class="pictures" src="./assets/wall.svg" alt="wall"></div>
         </div>
     </content>
     <div id="About" class="contacts">
@@ -175,8 +176,8 @@
             <div class="inputs">
                 <input class="input" type="text" placeholder="Name (Required)" required>
                 <input class="input" type="email" placeholder="Email (Required)" required>
-                <input class="input" type="text" placeholder="Subject">
-                <textarea class="input" rows="8" placeholder="Describe your project in detail..."></textarea>
+                <input id="subject" class="input" type="text" placeholder="Subject">
+                <textarea id="describe" class="input" rows="8" placeholder="Describe your project in detail..."></textarea>
             </div>
             <div class="contact-information">
                 <h3>Contact Information</h3>
