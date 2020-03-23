@@ -16,10 +16,10 @@ const phoneLeft = document.getElementsByClassName('phone')[0];
 const screenRight = document.getElementsByClassName('phoneDisplay')[1];
 const phoneRight = document.getElementsByClassName('phone')[1];
 phoneLeft.addEventListener('click', () => {
-    screenLeft.style.visibility = (screenLeft.style.visibility == "visible") ? "hidden" : "visible";
+    screenLeft.style.visibility = (screenLeft.style.visibility == "hidden") ? "visible" : "hidden";
 });
 phoneRight.addEventListener('click', () => {
-    screenRight.style.visibility = (screenRight.style.visibility == "visible") ? "hidden" : "visible";
+    screenRight.style.visibility = (screenRight.style.visibility == "hidden") ? "visible" : "hidden";
 });
 
 // Portfolio border 5px #F06C64 
@@ -64,18 +64,7 @@ function shuffle(arr){
 
 // slider 
 
-let slider = document.getElementsByClassName("slider")
-let slides = document.querySelectorAll('.slider > div')
-let arrows = document.getElementsByClassName("slider__arrow");
-[...arrows].forEach(el =>{
-    el.addEventListener('click', (event) => {
-                  
-    })
-})
-
 let slideIndex = 0;
-
-
 const goTo = () => {
     if (slideIndex === 1) {
         slideIndex = 0;
@@ -90,9 +79,10 @@ const goTo = () => {
         document.querySelector('.slide-2').classList.remove('hidden-slide');
     }
 };
-
-document.querySelector('#arrowLeft').addEventListener('click', goTo)
 document.querySelector('#arrowRight').addEventListener('click', goTo)
+document.querySelector('#arrowLeft').addEventListener('click', goTo)
+
+// form
 
 const formSend = e => {
     e.preventDefault();
@@ -102,5 +92,4 @@ const formSend = e => {
     let describeString = `${describeValue === 'Portfolio project' ? 'Description: Portfolio project' : 'No description'}`;
     alert(`The letter was sent\n${subjectString}\n${describeString}`)
 };
-
 document.querySelector('#Contact').addEventListener('submit', formSend)

@@ -125,6 +125,7 @@ li {
 /* Slider Styles */
 
 .slider {
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: #F06C64;
@@ -132,9 +133,11 @@ li {
     height: 600px;
     align-items: center;
     border-bottom: #ea676b solid 7px;
+    transition: left 500ms linear;
 }
 
 .slide-1 {
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: #F06C64;
@@ -151,7 +154,6 @@ li {
     height: 600px;
     background-image: url("./assets/Slide-2.png");
     transition: left 500ms linear;
-    opacity: 1;
 }
 
 .hidden-slide {
